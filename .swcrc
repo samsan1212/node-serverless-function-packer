@@ -1,0 +1,15 @@
+{
+  "minify": true,
+  "module": {
+    "type": "es6"
+  },
+  "jsc": {
+    "target": "es2019",
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true,
+      "dynamicImport": true
+    }
+  }
+}
