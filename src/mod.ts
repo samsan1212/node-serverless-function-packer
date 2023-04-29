@@ -72,7 +72,7 @@ export async function createZip(targetDir: string, zipPath: string) {
     if (fileStat.isSymbolicLink()) continue;
 
     if (fileStat.isDirectory()) {
-      zip.addLocalFolder(path.join(targetDir, file));
+      zip.addLocalFolder(path.join(targetDir, file), file);
       continue;
     }
 
