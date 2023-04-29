@@ -11,10 +11,8 @@ Options:
       --help            Show help                                      [boolean]
       --version         Show version number                            [boolean]
   -z, --zip             output a zip file                              [boolean]
-      --zipname         create a zip file with a provided name, cannot used with
-                         --random-zipname                               [string]
-      --random-zipname  create a zip file with a random name, cannot used with -
-                        -zipname                                       [boolean]
+      --zipname         create a zip file with a provided name, cannot used with --random-zipname [string]
+      --random-zipname  create a zip file with a random name, cannot used with --zipname [boolean]
   -d, --out-dir         the output directory                 [string] [required]
   -p, --package-json    the filepath of the package json     [string] [required]
 ```
