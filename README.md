@@ -5,7 +5,7 @@ A tool to help you installing and packing Node.js dependencies in one go
 ## Installation
 
 ```bash
-npm i serverless-function-packer
+npm i function-packer
 ```
 
 ## How to use

@@ -2067,6 +2067,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"function-packer@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "function-packer@workspace:."
+  dependencies:
+    "@commitlint/cli": ^17.6.1
+    "@commitlint/config-conventional": ^17.6.1
+    "@swc/cli": ^0.1.62
+    "@swc/core": ^1.3.55
+    "@types/adm-zip": ^0.5.0
+    "@types/node": ^18.16.3
+    "@types/yargs": ^17.0.24
+    "@typescript-eslint/eslint-plugin": ^5.59.1
+    "@typescript-eslint/parser": ^5.59.1
+    adm-zip: ^0.5.10
+    chalk: ^5.2.0
+    eslint: ^8.39.0
+    eslint-config-prettier: ^8.8.0
+    eslint-import-resolver-typescript: ^3.5.5
+    eslint-plugin-import: ^2.27.5
+    eslint-plugin-prettier: ^4.2.1
+    husky: ^8.0.3
+    pinst: ^3.0.0
+    prettier: ^2.8.8
+    rimraf: ^5.0.0
+    ts-node: ^10.9.1
+    typescript: ^5.0.4
+    yargs: ^17.7.2
+  bin:
+    functionpack: lib/cli.js
+  languageName: unknown
+  linkType: soft
+
 "function.prototype.name@npm:^1.1.5":
   version: 1.1.5
   resolution: "function.prototype.name@npm:1.1.5"
@@ -3803,38 +3835,6 @@ __metadata:
   checksum: 1b26ecf6db9e8292dd90df4e781d91875c0dcc1b1909e70f5d12959a23c7eebb8f01ea581c00783bbee72ceeaad9505797c381756326073850dc36ed284b21b9
   languageName: node
   linkType: hard
-
-"serverless-function-packer@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "serverless-function-packer@workspace:."
-  dependencies:
-    "@commitlint/cli": ^17.6.1
-    "@commitlint/config-conventional": ^17.6.1
-    "@swc/cli": ^0.1.62
-    "@swc/core": ^1.3.55
-    "@types/adm-zip": ^0.5.0
-    "@types/node": ^18.16.3
-    "@types/yargs": ^17.0.24
-    "@typescript-eslint/eslint-plugin": ^5.59.1
-    "@typescript-eslint/parser": ^5.59.1
-    adm-zip: ^0.5.10
-    chalk: ^5.2.0
-    eslint: ^8.39.0
-    eslint-config-prettier: ^8.8.0
-    eslint-import-resolver-typescript: ^3.5.5
-    eslint-plugin-import: ^2.27.5
-    eslint-plugin-prettier: ^4.2.1
-    husky: ^8.0.3
-    pinst: ^3.0.0
-    prettier: ^2.8.8
-    rimraf: ^5.0.0
-    ts-node: ^10.9.1
-    typescript: ^5.0.4
-    yargs: ^17.7.2
-  bin:
-    functionpack: lib/cli.js
-  languageName: unknown
-  linkType: soft
 
 "shebang-command@npm:^1.2.0":
   version: 1.2.0
