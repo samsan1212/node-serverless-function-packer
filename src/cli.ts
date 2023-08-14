@@ -1,10 +1,9 @@
-import * as path from "node:path";
-
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
 
 import * as logger from "./logger.js";
 import functionpack from "./mod.js";
+import { ensureOutDirExists } from "./utils.js";
 
 import type { ArgumentsCamelCase } from "yargs";
 
@@ -53,8 +52,14 @@ yargs(hideBin(process.argv))
         process.exit(1);
       }
 
-      const absolutePathOfOutDir = path.join(process.cwd(), outDir);
-      const absolutePathOfPackageJson = path.join(process.cwd(), packageJson);
+      const absolutePathOfOutDir = new URL(outDir, `file://${process.cwd()}/`).pathname;
+      const absolutePathOfPackageJson = new URL(packageJson, `file://${process.cwd()}/`).pathname;
+
+      try {
+        await ensureOutDirExists(absolutePathOfOutDir);
+      } catch (error) {
+        logger.error(`An error occurred: ${error.message}`);
+      }
 
       try {
         await functionpack(absolutePathOfOutDir, absolutePathOfPackageJson, {

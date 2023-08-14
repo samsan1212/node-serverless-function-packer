@@ -1,7 +1,7 @@
 {
   "name": "function-packer",
   "packageManager": "yarn@3.5.0",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "type": "module",
   "author": "Sam TS Chan <samchan148@gmail.com>",
